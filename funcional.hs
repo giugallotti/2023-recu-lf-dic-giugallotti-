@@ -1,5 +1,4 @@
 -- crear un ejemplo de composicion de funciones
-{-# OPTIONS_GHC -Wno-deferred-out-of-scope-variables #-}
 
 type Artista = (String, String, Int)
 --type Artista = (nombre, genero, cantidad de albums)

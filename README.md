@@ -1,0 +1,1 @@
+Funcional aprobado, resta logico

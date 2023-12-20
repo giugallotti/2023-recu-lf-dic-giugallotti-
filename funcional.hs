@@ -1,4 +1,8 @@
 -- crear un ejemplo de composicion de funciones
+<<<<<<< HEAD
+=======
+
+>>>>>>> 18950d432ac5a20da8c1cb428572380cf11f127d
 type Artista = (String, String, Int)
 --type Artista = (nombre, genero, cantidad de albums)
 

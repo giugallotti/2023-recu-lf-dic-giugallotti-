@@ -48,3 +48,7 @@ movimientoTorre(Fil1, Col1, Fil2, Col2) :-
     not(pieza(torre, _, Fil2, Col2)), 
     Fil1 \= Fil2,
     Col1 \= Col2.
+
+%encontrar cual/es son los casilleros clave donde pueden moverse las torres
+casillerosClave(Fil, Col) :-
+    movimientoTorre(_,_,Fil,Col).

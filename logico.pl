@@ -46,39 +46,5 @@ movimientoTorre(Fil1, Col1, Fil2, Col2) :-
     nro(Col2),
     casilleroLibre(Fil2, Col2), 
     not(pieza(torre, _, Fil2, Col2)), 
-    Fil1 = Fil2, 
-    Col1 \= Col2.
-    % Mismo fila, diferente columna
-   
-movimientoTorre(Fil1, Col1, Fil2, Col2) :-
-    nro(Fil1),
-    nro(Col1),
-    nro(Fil2),
-    nro(Col2),
-    casilleroLibre(Fil2, Col2), 
-    not(pieza(torre, _, Fil2, Col2)), 
-    Fil1 \= Fil2,
-    Col1 = Col2.
-    % Distinta fila, misma columna
-
-movimientoTorre(Fil1, Col1, Fil2, Col2) :-
-    nro(Fil1),
-    nro(Col1),
-    nro(Fil2),
-    nro(Col2),
-    casilleroLibre(Fil2, Col2), 
-    not(pieza(torre, _, Fil2, Col2)), 
-    Fil1 = Fil2,
-    Col1 = Col2.
-    % Se mueven sobre misma fila y columna
-
-movimientoTorre(Fil1, Col1, Fil2, Col2) :-
-    nro(Fil1),
-    nro(Col1),
-    nro(Fil2),
-    nro(Col2),
-    casilleroLibre(Fil2, Col2), 
-    not(pieza(torre, _, Fil2, Col2)), 
     Fil1 \= Fil2,
     Col1 \= Col2.
-    % Se mueven sobre distinta fila y columna
